@@ -1,0 +1,111 @@
+.pricing {
+    padding: 64px 16px;
+
+    &__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    &__heading {
+        font-size: 2.13rem;
+        color: $c-blue-gray;
+        margin-bottom: 40px;
+    }
+
+    &__toggle-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    &__toggle-option {
+        color: $c-blue-gray-light;
+    }
+
+    &__toggle {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 56px;
+        height: 32px;
+        border: 0;
+        border-radius: 30px;
+        background: $gr-blue;
+        margin: 0 24px;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 24px;
+            width: 24px;
+            height: 24px;
+            margin: 4px;
+            border-radius: 50%;
+            background: #fff;
+            transition: transform 400ms ease-in-out;
+        }
+
+        &.active::before {
+            transform: translateX(-24px);
+        }
+    }
+
+    &__card-wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+
+    &__card {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 32px;
+        background: #fff;
+        color: $c-blue-gray-dark;
+        border-radius: 6px;
+
+        &--dark {
+            color: #fff;
+            background: $gr-blue;
+
+            .pricing__card-heading {
+                color: #fff;
+            }
+        }
+    }
+
+    &__card-heading {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        color: $c-blue-gray;
+    }
+
+    &__card-price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        font-size: 4.66rem;
+
+        span {
+            font-size: 2.66rem;
+            margin-right: 8px;
+        }
+    }
+
+    &__card-list {
+        width: 100%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    &__card-item {
+        padding: 17px 0;
+        border-top: 1px solid $c-blue-gray-light;
+
+        &:last-child {
+            border-bottom: 1px solid $c-blue-gray-light;
+        }
+    }
+}
