@@ -1,4 +1,62 @@
+/* Buttons */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.btn {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn--dark {
+  position: relative;
+  background: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+  color: #fff;
+  z-index: 1;
+}
+
+.btn--dark::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.btn--dark:hover {
+  border: 1px solid #696fdd;
+  color: #696fdd;
+}
+
+.btn--dark:hover::before {
+  opacity: 1;
+}
+
+.btn--light {
+  background: #fff;
+  color: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+}
+
+.btn--light:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;

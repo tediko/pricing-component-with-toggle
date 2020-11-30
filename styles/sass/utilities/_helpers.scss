@@ -1,0 +1,57 @@
+/* Buttons */
+.btn {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+    &--dark {
+        position: relative;
+        background: $gr-blue;
+        color: #fff;
+        z-index: 1;
+        
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            border-radius: 5px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 250ms ease-in;
+        }
+        
+        &:hover {
+            border: 1px solid hsl(237, 63%, 64%);
+            color: hsl(237, 63%, 64%);
+
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &--light {
+        background: #fff;
+        color: $gr-blue;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+}
