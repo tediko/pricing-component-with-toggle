@@ -7,7 +7,52 @@
   <title>Frontend Mentor | Pricing component with toggle</title>
 </head>
 <body>
-
+  <!-- Pricing -->
+  <section class="pricing">
+    <div class="pricing__container">
+      <h1 class="pricing__heading">Our Pricing</h1>
+      <div class="pricing__toggle-wrapper">
+        <p class="pricing__toggle-option">Annually</p>
+        <button class="pricing__toggle" aria-label="price toggle" data-toggle></button>
+        <p class="pricing__toggle-option">Monthly</p>
+      </div>
+      <div class="pricing__card-wrapper">
+        <!-- pricing card 01 -->
+        <article class="pricing__card">
+          <h2 class="pricing__card-heading">Basic</h2>
+          <p class="pricing__card-price"><span>&dollar;</span>19.99</p>
+          <ul class="pricing__card-list">
+            <li class="pricing__card-item">500 GB Storage</li>
+            <li class="pricing__card-item">2 Users Allowed</li>
+            <li class="pricing__card-item">Send up to 3 GB</li>
+          </ul>
+          <button class="pricing__card-cta btn btn--light">Learn More</button>
+        </article>
+        <!-- pricing card 02 -->
+        <article class="pricing__card">
+          <h2 class="pricing__card-heading">Professional</h2>
+          <p class="pricing__card-price"><span>&dollar;</span>24.99</p>
+          <ul class="pricing__card-list">
+            <li class="pricing__card-item">1 TB Storage</li>
+            <li class="pricing__card-item">5 Users Allowed</li>
+            <li class="pricing__card-item">Send up to 10 GB</li>
+          </ul>
+          <button class="pricing__card-cta btn btn--dark">Learn More</button>
+        </article>
+        <!-- pricing card 03 -->
+        <article class="pricing__card">
+          <h2 class="pricing__card-heading">Master</h2>
+          <p class="pricing__card-price"><span>&dollar;</span>39.99</p>
+          <ul class="pricing__card-list">
+            <li class="pricing__card-item">2 TB Storage</li>
+            <li class="pricing__card-item">10 Users Allowed</li>
+            <li class="pricing__card-item">Send up to 20 GB</li>
+          </ul>
+          <button class="pricing__card-cta btn btn--light">Learn More</button>
+        </article>
+      </div>
+    </div>
+  </section>
 <!--   Our Pricing
   Annually
   Monthly
