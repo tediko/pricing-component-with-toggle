@@ -139,7 +139,7 @@
 
     &__card-item {
         padding: 17px 0;
-        border-top: 1px solid $c-blue-gray-light;
+        border-top: 1px solid lighten($c-blue-gray-light, 10);
 
         &:last-child {
             border-bottom: 1px solid $c-blue-gray-light;
