@@ -249,4 +249,32 @@ body {
 .pricing__card-item:last-child {
   border-bottom: 1px solid #b3b5c6;
 }
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #b3b5c6;
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.footer__attribution {
+  text-align: center;
+}
+
+.footer a {
+  color: #6d708d;
+  text-decoration: none;
+  transition: color 250ms ease-in;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #696fdd;
+}
 /*# sourceMappingURL=main.css.map */
