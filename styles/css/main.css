@@ -261,13 +261,6 @@ body {
   color: #6d708d;
 }
 
-.pricing__card-price-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .pricing__card-price {
   display: flex;
   align-items: center;
