@@ -48,7 +48,7 @@
 
 .btn--light {
   background: #fff;
-  color: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+  color: #696fdd;
 }
 
 .btn--light:hover {
