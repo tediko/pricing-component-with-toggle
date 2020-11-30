@@ -38,6 +38,7 @@
         background: $gr-blue;
         margin: 0 24px;
         cursor: pointer;
+        transition: opacity 250ms ease-in;
 
         &::before {
             position: absolute;
@@ -49,6 +50,10 @@
             border-radius: 50%;
             background: #fff;
             transition: transform 400ms ease-in-out;
+        }
+
+        &:hover {
+            opacity: 0.5;
         }
 
         &.active::before {

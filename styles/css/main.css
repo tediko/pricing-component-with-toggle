@@ -132,6 +132,7 @@ body {
   background: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
   margin: 0 24px;
   cursor: pointer;
+  transition: opacity 250ms ease-in;
 }
 
 .pricing__toggle::before {
@@ -144,6 +145,10 @@ body {
   border-radius: 50%;
   background: #fff;
   transition: transform 400ms ease-in-out;
+}
+
+.pricing__toggle:hover {
+  opacity: 0.5;
 }
 
 .pricing__toggle.active::before {
