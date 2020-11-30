@@ -24,8 +24,8 @@ const togglePrice = () => {
         let animation = price.animate(animationForwards, 500);
 
         isToggle ? 
-            (toggleBtn.classList.remove('active'), animationOnFinish(animation, price, priceValues[1])) :
-            (toggleBtn.classList.add('active'), animationOnFinish(animation, price, priceValues[0]));
+            (toggleBtn.classList.add('active'), animationOnFinish(animation, price, priceValues[1])) :
+            (toggleBtn.classList.remove('active'), animationOnFinish(animation, price, priceValues[0]));
     })
     isToggle = !isToggle; 
 }
