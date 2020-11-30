@@ -184,6 +184,7 @@ body {
   color: #fff;
   background: linear-gradient(to bottom, #a3a8f0 0%, #696fdd 100%);
   margin: 32px 0;
+  z-index: 2;
 }
 
 .pricing__card--dark .pricing__card-heading {
