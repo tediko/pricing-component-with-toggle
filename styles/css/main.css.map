@@ -7,7 +7,8 @@
         "../sass/utilities/_helpers.scss",
         "../sass/utilities/_animations.scss",
         "../sass/base/_reset.scss",
-        "../sass/base/_typography.scss"
+        "../sass/base/_typography.scss",
+        "../sass/layout/_pricing.scss"
     ],
     "names": [],
     "file": "main.css"
