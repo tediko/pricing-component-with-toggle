@@ -327,7 +327,6 @@ body {
 .pricing__card-price:last-child {
   position: absolute;
   opacity: 0;
-  transform: translateX(50px);
 }
 
 .pricing__card-list {
