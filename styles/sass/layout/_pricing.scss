@@ -55,6 +55,12 @@
     &__card-wrapper {
         display: flex;
         flex-flow: column;
+
+        @media (min-width: 875px) {
+            width: 100%;
+            justify-content: center;
+            flex-flow: row;
+        }
     }
 
     &__card {
@@ -65,7 +71,7 @@
         padding: 32px;
         background: #fff;
         color: $c-blue-gray-dark;
-        border-radius: 6px;
+        border-radius: 10px;
 
         &--dark {
             color: #fff;
@@ -74,6 +80,22 @@
             .pricing__card-heading {
                 color: #fff;
             }
+
+            @media (min-width: 875px) {
+                margin: -20px 0;
+                max-width: 352px;
+            }
+        }
+
+        &--light {
+            @media (min-width: 875px) {
+                max-width: 342px;
+            }
+        }
+
+        @media (min-width: 875px) {
+            min-width: 275px;
+            width: 100%;
         }
     }
 

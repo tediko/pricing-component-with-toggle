@@ -149,6 +149,14 @@ body {
   flex-flow: column;
 }
 
+@media (min-width: 875px) {
+  .pricing__card-wrapper {
+    width: 100%;
+    justify-content: center;
+    flex-flow: row;
+  }
+}
+
 .pricing__card {
   display: flex;
   flex-flow: column;
@@ -157,7 +165,7 @@ body {
   padding: 32px;
   background: #fff;
   color: #494c5f;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .pricing__card--dark {
@@ -167,6 +175,26 @@ body {
 
 .pricing__card--dark .pricing__card-heading {
   color: #fff;
+}
+
+@media (min-width: 875px) {
+  .pricing__card--dark {
+    margin: -20px 0;
+    max-width: 352px;
+  }
+}
+
+@media (min-width: 875px) {
+  .pricing__card--light {
+    max-width: 342px;
+  }
+}
+
+@media (min-width: 875px) {
+  .pricing__card {
+    min-width: 275px;
+    width: 100%;
+  }
 }
 
 .pricing__card-heading {
