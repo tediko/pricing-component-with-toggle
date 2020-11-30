@@ -273,11 +273,6 @@ body {
   margin-right: 8px;
 }
 
-.pricing__card-price:last-child {
-  position: absolute;
-  opacity: 0;
-}
-
 .pricing__card-list {
   width: 100%;
   margin-bottom: 32px;
