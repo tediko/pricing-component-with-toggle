@@ -88,50 +88,6 @@
   }
 }
 
-@keyframes price-slideLeft {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-}
-
-@keyframes price-slideLeft-reverse {
-  0% {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes price-slideRight {
-  0% {
-    transform: translateX(77px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes price-slideRight-reverse {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(77px);
-    opacity: 0;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
