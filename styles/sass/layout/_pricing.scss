@@ -17,6 +17,10 @@
         display: flex;
         align-items: center;
         margin-bottom: 64px;
+
+        @media (min-width: 875px) {
+            margin-bottom: 84px;
+        }
     }
 
     &__toggle-option {
@@ -85,6 +89,7 @@
             @media (min-width: 875px) {
                 margin: -20px 0;
                 max-width: 352px;
+                padding: 52px 32px;
             }
         }
 

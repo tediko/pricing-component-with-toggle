@@ -111,6 +111,12 @@ body {
   margin-bottom: 64px;
 }
 
+@media (min-width: 875px) {
+  .pricing__toggle-wrapper {
+    margin-bottom: 84px;
+  }
+}
+
 .pricing__toggle-option {
   color: #b3b5c6;
 }
@@ -182,6 +188,7 @@ body {
   .pricing__card--dark {
     margin: -20px 0;
     max-width: 352px;
+    padding: 52px 32px;
   }
 }
 
