@@ -8,4 +8,14 @@ body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
+    background: url(../../assets/img/bg-top.svg), $c-blue-gray-very-light;
+    background-repeat: no-repeat;
+    background-position-x: 51vw;
+    background-position-y: -41px;
+    
+    @media (min-width: 875px) {
+        background: url(../../assets/img/bg-top.svg), url(../../assets/img/bg-bottom.svg), $c-blue-gray-very-light;
+        background-repeat: no-repeat;
+        background-position: top right, bottom left;
+    }
 }

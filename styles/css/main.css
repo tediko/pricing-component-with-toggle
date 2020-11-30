@@ -75,6 +75,18 @@ body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  background: url(../../assets/img/bg-top.svg), #f6f6fe;
+  background-repeat: no-repeat;
+  background-position-x: 51vw;
+  background-position-y: -41px;
+}
+
+@media (min-width: 875px) {
+  body {
+    background: url(../../assets/img/bg-top.svg), url(../../assets/img/bg-bottom.svg), #f6f6fe;
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+  }
 }
 
 .pricing {
