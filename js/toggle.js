@@ -11,24 +11,21 @@ const animationReverse = [
     { transform: 'translateX(0px)', opacity: '1' }
 ]
 
+const animationOnFinish = (animation, element, value) => {
+    animation.onfinish = () => {
+        element.innerHTML = `<span>&dollar;</span>${value}`;
+        element.animate(animationReverse, 500);
+    };
+}
+
 const togglePrice = () => {    
     prices.forEach(price => {
         const priceValues = [...price.getAttribute('data-price').split(' ')];
         let animation = price.animate(animationForwards, 500);
 
-        if (isToggle) {
-            toggleBtn.classList.remove('active');
-            animation.onfinish = () => {
-                price.innerHTML = `<span>&dollar;</span>${priceValues[1]}`;
-                price.animate(animationReverse, 500);
-            };
-        } else {
-            toggleBtn.classList.add('active');
-            animation.onfinish = () => {
-                price.innerHTML = `<span>&dollar;</span>${priceValues[0]}`;
-                price.animate(animationReverse, 500);
-            };
-        }  
+        isToggle ? 
+            (toggleBtn.classList.remove('active'), animationOnFinish(animation, price, priceValues[1])) :
+            (toggleBtn.classList.add('active'), animationOnFinish(animation, price, priceValues[0]));
     })
     isToggle = !isToggle; 
 }
